@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 9vw 6vw 0;
+}
+
+.main .wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .innerwrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerwrapper .leftsection{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.leftsection h1{
+    font-size: 8vw;
+    font-weight: 400;
+    line-height: 7vw;
+
+}
+.clubbed .dotted button{
+    padding: 1vw 4vw;
+    border-radius: 3vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
+}
+
+button span{
+    width: 1.3vw;
+    height: 1.3vw;
+    position: absolute;
+    border-radius: 50%;
+}
+span.grey{
+    background: grey;
+    top: 30%;
+    right: 21%;
+}
+span.blue{
+    background: blue;
+    top: 30%;
+    right: 5%;
+}
+.clubbed .desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.clubbed .desc strong{
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+.clubbed .desc p{
+    font-size: 1vw;
+}
+.innerwrapper .rightsection{
+    width: 40%;
+    height: 100%;
+    padding: 2vw;
+    position: relative;
+}
+
+
+.rightsection .moneyrating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moneyrating .price{
+    font-size: 1.5vw;
+}
+
+.moneyrating .rating{
+    font-size: 1.5vw;
+}
+.rating span>i{
+    color: gold;
+}
+
+.imagesection img{
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.addtobag a{
+    padding: 4vw 2vw;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: absolute;
+    top: 15vw;
+    right: -2vw;
+    font-size: 1vw;
+}
+
+.capwill p{
+    font-size: 3vw;
+    position: absolute;
+    top: 40vw;
+    left: -0.7vw;
+    rotate: 270deg;
+    transform-origin: 0 0;
+}
+
+@media only screen and (max-width:1024px) {
+    .main{
+        padding: 3vw;
+    }
+    .wrapper .innerwrapper{
+        display: block;
+        height: auto;
+    }
+    .innerwrapper .leftsection{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    .leftsection h1 {
+        font-size: 65px;
+        text-align: center;
+        line-height: 56px;
+    }
+    .dotted{
+        justify-self: center;
+    }
+    .clubbed .dotted button{
+        padding: 10px 50px;
+        border-radius: 25px;
+        margin: 15px 0px;
+        font-size: 16px;
+    }
+    button span {
+        width: 15px;
+        height: 15px;
+    }
+    .clubbed .desc strong{
+        font-size: 21px;
+    }
+    .clubbed .desc p {
+        font-size: 18px;
+    }
+    .innerwrapper .rightsection {
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+    }
+    .moneyrating .price {
+        font-size: 18px;
+    }
+    .moneyrating .rating {
+        font-size: 18px;
+    }
+
+    .addtobag a{
+        font-size: 15px;
+        border-radius: 20px;
+        padding: 10px 30px;
+    }
+    .capwill p {
+        font-size: 35px;
+        top: 102vw;
+        left: -0.7vw;
+    }
+
+
+}
